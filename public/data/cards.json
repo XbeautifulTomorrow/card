@@ -1,0 +1,14 @@
+[  {
+  "id": "sm10-33",
+  "set": "sm10",
+  "name": "Squirtle",
+  "supertype": "Pokémon",
+  "subtypes": ["Basic"],
+  "types": ["Lightning"],
+  "number": "31",
+  "rarity": "Common",
+  "images": {
+    "small": "https://images.pokemontcg.io/sm10/33.png",
+    "large": "https://images.pokemontcg.io/sm10/33_hires.png"
+  }
+}]
