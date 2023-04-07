@@ -17,12 +17,26 @@
 
   // image props
   export let img = "";
-  export let back = "https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg";
+  export let back = getQueryString().imgUrl || "https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg";
   export let foil = "";
   export let mask = "";
 
   // context/environment props
   export let showcase = false;
+
+  function getQueryString() {
+      const result = {};
+      const param = window.location.href.split("?")[1];
+      const search = decodeURIComponent("?" + param);
+      const arr = search !== '' ? search.substr(1).split('&') : [];
+      arr.forEach((item) => {
+        if (item) {
+          const itemArr = item.split('=');
+          result[itemArr[0]] = itemArr[1]
+        }
+      })
+      return result;
+    }
 
   const randomSeed = {
     x: Math.random(),
@@ -38,7 +52,7 @@
 
   let back_img = back;
   let front_img = "";
-  let img_base = img.startsWith("http") ? "" : "https://images.pokemontcg.io/";
+  let img_base = img.startsWith("http") || img.startsWith("https") ? "" : "https://images.pokemontcg.io/";
 
 
   let thisCard;

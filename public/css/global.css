@@ -1,6 +1,6 @@
 :root {
   --primary: hsl(187, 85%, 60%);
-  --link-hover: hsl(207, 100%, 94%)
+  --link-hover: hsl(207, 100%, 94%);
 }
 
 * {
@@ -12,13 +12,11 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
-  scroll-padding-top: 2em;
 }
 
 body {
   font-family: Roboto;
-  background-color: hsl(220, 7%, 24%);
+  overflow: hidden;
 }
 
 a {
@@ -35,16 +33,18 @@ main {
   color: white;
   padding: 50px;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 header {
   margin-bottom: 4rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
   max-width: 900px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 header h2 {
@@ -106,7 +106,7 @@ p.small {
 h1,
 h2,
 h3 {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed';
 }
 
 h1 sup {
@@ -130,13 +130,13 @@ h3 a {
 h1 a:before,
 h2 a:before,
 h3 a:before {
-  content: "⚓";
+  content: '⚓';
   position: absolute;
   transform: translate(-100px, -5px);
   width: 1em;
   height: 1em;
   opacity: 0;
-  transition: all 0.5s cubic-bezier(.55,.06,.68,.19);
+  transition: all 0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
 }
 
 h1 a:hover:before,
@@ -145,10 +145,10 @@ h3 a:hover:before,
 h1:target a:before,
 h2:target a:before,
 h3:target a:before {
-  content: "⚓";
+  content: '⚓';
   transform: translate(-200%, -5px);
   opacity: 1;
-  transition: all 0.5s cubic-bezier(.22,.61,.36,1);
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 h2 + p,
@@ -187,7 +187,7 @@ mark {
   position: fixed;
   bottom: 1em;
   right: 1em;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 5em;
   background: var(--primary);
   color: hsl(192, 87%, 15%);
