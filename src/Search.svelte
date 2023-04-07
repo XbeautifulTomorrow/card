@@ -175,7 +175,7 @@
     color: white;
     outline: none;
     transition: all 0.5s ease;
-    box-shadow: 0 5px 20px hsla(220, 7%, 20%, .75), 0 5px 10px hsla(220, 7%, 20%, .75);
+    /* box-shadow: 0 5px 20px hsla(220, 7%, 20%, .75), 0 5px 10px hsla(220, 7%, 20%, .75); */
 
     grid-row: 1;
     grid-column: 1;
@@ -186,7 +186,7 @@
   input:active,
   input:focus,
   input:hover {
-    background: hsla(220, 7%, 17%, .88);
+    /* background: hsla(220, 7%, 17%, .88); */
   }
 
   input:active,

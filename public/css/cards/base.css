@@ -123,7 +123,7 @@
 .card__rotator {
   display: grid;
   perspective: 600px;
-  will-change: transform, box-shadow;
+  will-change:  transform, box-shadow;
 
   transform-origin: center;
   -webkit-transform-origin: center;
@@ -161,25 +161,25 @@ button.card__rotator {
 
 .card__rotator,
 .card.active .card__rotator:focus {
-  transition: box-shadow 0.4s ease, opacity .33s ease-out;
-  box-shadow: 
+  transition:box-shadow 0.4s ease, opacity .33s ease-out;
+  /* box-shadow: 
     0 0 3px -1px transparent, 
     0 0 2px 1px transparent, 
     0 0 5px 0px transparent,
     0px 10px 20px -5px black, 
     0 2px 15px -5px black,
-    0 0 20px 0px transparent;
+    0 0 20px 0px transparent; */
 }
 
 .card.active .card__rotator,
 .card__rotator:focus {
-  box-shadow: 
+  /* box-shadow: 
     0 0 3px -1px white, 
     0 0 3px 1px var(--card-edge), 
     0 0 12px 2px var(--card-glow), 
     0px 10px 20px -5px black, 
     0 0 40px -30px var(--card-glow), 
-    0 0 50px -20px var(--card-glow)
+    0 0 50px -20px var(--card-glow) */
 }
 
 .card__rotator * {
@@ -202,7 +202,7 @@ button.card__rotator {
 }
 
 .card__back {
-  background-color: var(--card-back);
+  /* background-color: var(--card-back); */
   -webkit-transform: rotateY(180deg) translateZ(1px);
   transform: rotateY(180deg) translateZ(1px);
   backface-visibility: visible;

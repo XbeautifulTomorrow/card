@@ -84,7 +84,6 @@ header svg {
 
 .showcase {
   z-index: 99;
-  max-width: min(330px, 80vw);
   margin: auto;
 }
 
@@ -192,5 +191,5 @@ mark {
   background: var(--primary);
   color: hsl(192, 87%, 15%);
   text-decoration: none;
-  box-shadow: 0 7px 13px -5px currentColor;
+  /* box-shadow: 0 7px 13px -5px currentColor; */
 }
