@@ -1,6 +1,7 @@
 :root {
   --primary: hsl(187, 85%, 60%);
   --link-hover: hsl(207, 100%, 94%);
+  --showcaseHeader: 618px;
 }
 
 * {
@@ -85,6 +86,10 @@ header svg {
 .showcase {
   z-index: 99;
   margin: auto;
+  height: var(--showcaseHeader);
+}
+.showcase * {
+  height: calc(var(--showcaseHeader) - 100px) !important;
 }
 
 h1 {
