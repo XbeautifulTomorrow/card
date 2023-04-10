@@ -451,8 +451,8 @@
           width="660"
           height="921"
         />
-        <!-- <div class="card__shine"></div>
-        <div class="card__glare"></div> -->
+        <div class="card__shine"></div>
+        <div class="card__glare"></div>
       </div>
     </button>
   </div>
