@@ -87,6 +87,7 @@ header svg {
   z-index: 99;
   margin: auto;
   height: var(--showcaseHeader);
+  padding-top: 50px;
 }
 .showcase * {
   height: calc(var(--showcaseHeader) - 100px) !important;

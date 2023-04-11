@@ -174,12 +174,12 @@ button.card__rotator {
 .card.active .card__rotator,
 .card__rotator:focus {
   box-shadow: 
-    0 0 3px -1px white, 
-    0 0 3px 1px var(--card-edge), 
-    0 0 12px 2px var(--card-glow), 
+    0 0 30px -10px white, 
+    0 0 30px 10px #961469, 
+    0 0 30px 10px #961469, 
     0px 10px 20px -5px black, 
-    0 0 40px -30px var(--card-glow), 
-    0 0 50px -20px var(--card-glow)
+    0 0 40px -30px #961469, 
+    0 0 50px -20px #961469
 }
 
 .card__rotator * {
