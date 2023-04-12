@@ -23,7 +23,6 @@
 		return getCards()
 			.then((cards) => {
 				window.cards = cards;
-				console.log(cards,"cards====")
 				showcase = cards[0];
 				basics = cards.slice(1, 4);
 				reverse = [...cards.slice(4, 7), ...cards.slice(70,76)];
@@ -83,7 +82,6 @@
 					subtypes={showcase.subtypes}
 					rarity={showcase.rarity}
 					isReverse={showcase.isReverse}
-					showcase={true}
 				/>
 			{/if}
 		</div>
