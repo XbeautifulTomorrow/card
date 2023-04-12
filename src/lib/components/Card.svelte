@@ -426,7 +426,6 @@
     class="card__translater">
     <button
       class="card__rotator"
-      on:click={activate}
       on:pointermove={interact}
       on:mouseout={interactEnd}
       on:blur={deactivate}
