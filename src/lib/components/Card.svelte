@@ -394,13 +394,13 @@
           showcaseTimerEnd = setTimeout(() => {
             clearInterval(showcaseInterval);
             interactEnd(null, 0);
-          }, 4000);
+          }, 50);
         } else {
           interacting = false;
           active = false;
           return;
         }
-      }, 2000);
+      }, 0);
     }
   });
 </script>

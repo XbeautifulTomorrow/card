@@ -159,7 +159,7 @@ button.card__rotator {
   appearance: none;
 }
 
-.card__rotator,
+/* .card__rotator,
 .card.active .card__rotator:focus {
   transition:box-shadow 0.4s ease, opacity .33s ease-out;
   box-shadow: 
@@ -169,7 +169,7 @@ button.card__rotator {
     0px 10px 20px -5px black, 
     0 2px 15px -5px black,
     0 0 20px 0px transparent;
-}
+} */
 
 .card.active .card__rotator,
 .card__rotator:focus {
