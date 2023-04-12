@@ -82,6 +82,7 @@
 					subtypes={showcase.subtypes}
 					rarity={showcase.rarity}
 					isReverse={showcase.isReverse}
+					showcase={true}
 				/>
 			{/if}
 		</div>
